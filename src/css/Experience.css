@@ -1,0 +1,57 @@
+.exper {
+  width: 100%;
+  height: 300px;
+  margin-block: 60px;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+}
+.exp-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.exp-info input {
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 5px -1px 1px 0px var(--main-color);
+  color: var(--main-color);
+  background-color: var(--secand-color);
+}
+.exp-sec {
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px gray;
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+.exp-sec h2 {
+  padding-left: 20px;
+  padding-top: 20px;
+  text-transform: capitalize;
+  color: var(--secand-color);
+  font-size: 30px;
+  font-weight: 800;
+}
+.exp-sec h3 {
+  margin-left: 40px;
+  margin-top: 8px;
+  padding: 5px;
+  box-shadow: 0 0 10px var(--secand-color);
+  border-radius: 10px;
+}
+.exp-sec h4 {
+  margin-left: 40px;
+  margin-block: 8px;
+}
+.exp-sec p {
+  margin-left: 20px;
+  line-height: 25px;
+}

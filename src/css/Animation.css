@@ -1,0 +1,52 @@
+.warrper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.static-text {
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 10px;
+  color: white;
+}
+.dyn-text {
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  z-index: -4;
+  text-transform: capitalize;
+  color: var(--main-color);
+}
+.dyn-text li span {
+  position: relative;
+}
+.dyn-text li {
+  list-style: none;
+  font-size: 25px;
+  font-weight: 500;
+
+  animation: step 6s steps(3) infinite;
+  top: 0;
+  position: relative;
+}
+@keyframes step {
+  100% {
+    top: -90px;
+  }
+}
+.dyn-text li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid var(--main-color);
+  background-color: black;
+  animation: tryed 2s steps(20) infinite;
+}
+@keyframes tryed {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}

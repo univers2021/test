@@ -1,0 +1,93 @@
+.classeur {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+/* ========info====== */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.info .title {
+  font-size: 50px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: var(--secand-color);
+}
+.info .paragraphe {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 400;
+  max-width: 600px;
+}
+.info .paragraphe span {
+  color: var(--main-color);
+  font-size: 30px;
+}
+.btn {
+  width: 250px;
+  height: 50px;
+  position: relative;
+}
+.aboute {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--main-color);
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+.aboute::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  transform: translateX(300px);
+  z-index: -1;
+  transition: 1.5s ease-in;
+}
+.aboute:hover::after {
+  transform: translateX(0px);
+}
+.aboute h3 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+.icons {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--main-color);
+  top: -5px;
+  right: 0px;
+  background-color: black;
+  border-radius: 50%;
+}
+.icon {
+  color: var(--main-color);
+}
+.background {
+  position: fixed;
+  position: absolute;
+  top: 60px;
+  z-index: -1;
+  width: 20%;
+  height: calc(100vh - 60px);
+  background-color: var(--main-color);
+}
+/* ======== end info===== */
+/* ======== img===== */
+.img img {
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* ======== end img===== */
